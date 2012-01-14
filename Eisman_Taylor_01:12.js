@@ -5,6 +5,7 @@
 alert("JavaScript works!");
 
 var worker = "Henry";
+var manager = "Walter";
 var day = "Monday";
 var minimumInventory = 2;
 var maximumInventory = 5;
@@ -43,4 +44,8 @@ var restockCandy = function (inventory) {
 	} else {
 		console.log("The candy is fully stocked");
 	}
+};
+
+var workStatus = function (){
+	console.log(manager + " will be very upset with " + worker + " if he does not get the inventory restocked.");	
 };
