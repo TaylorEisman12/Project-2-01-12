@@ -5,19 +5,26 @@
 alert("JavaScript works!");
 
 var worker = "Henry";
+var day = "Monday";
 var minimumInventory = 2;
 var maximumInventory = 5;
-var currentInventory = new Array("Jolly Ranchers" => 2, "Chewing Gum" => 4, "Suckers" => 1, "Gummy Bears" => 2);
+var currentInventory = new Array();
+currentInventory["Jolly Ranchers"] = 2;
+currentInventory["Chewing Gum"] = 5;
+currentInventory["Suckers"] = 3;
+currentInventory["Gummy Bears"] = 1;
 
-function openStore(day){
+var openStore = function(day){
 	if(day = "Monday"){
-		console.log( worker + " needs to restock the candy." );
+		console.log( worker + " needs to check the candy stock." );
 	} else {
 		console.log( worker + " does not need to restock the candy." );
 	}
 }
 
-openStore("Monday");
+var needToRestocked = function(currentInventory,minimumInventory){
+	
+}
 
 var restockCandy = function (inventory) {
 	inventoryRemaining = inventory.length;
