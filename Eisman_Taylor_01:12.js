@@ -22,11 +22,15 @@ var openStore = function(day){
 	} else {
 		console.log( worker + " does not need to restock the candy." );
 	}
-}
+};
+
 
 var needToRestocked = function(currentInventory,minimumInventory){
-	
-}
+	while(currentInventory < minimumInventory){
+		console.log( worker + " needs to add more candy.");
+		currentInventory++;
+	}	
+};
 
 var restockCandy = function (inventory) {
 	inventoryRemaining = inventory.length;
