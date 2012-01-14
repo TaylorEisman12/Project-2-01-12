@@ -4,14 +4,21 @@
 
 alert("JavaScript works!");
 
-var worker = "Henry",
-    maxInventory = 60;
+var worker = "Henry";
 
 var inventory = new Array("Jolly Ranchers", "Chewing Gum", "Suckers", "Gummy Bears");
 
-var outputJob = function () {
-    console.log( worker + " you need to restock the candy." );
-	console.log("We need " + maxInventory + " total pieces of candy on the shelf.");
+var restockCandy = function (inventory) {
+	inventoryRemaining = inventory.length;
+	if(inventoryRemaining > 0){
+		console.log( worker + " you need to restock the candy." );
+		console.log("We need each type of candy on the shelf.");
+		for (var inventoryItem = 0; inventoryItem < inventory.length; inventoryItem++){
+			console.log("Stocking " + inventory[inventoryItem]);
+		}
+	} else {
+		console.log("The candy is fully stocked");
+	}
 };
 
 if ( restock == true ){
