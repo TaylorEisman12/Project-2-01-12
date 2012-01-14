@@ -8,6 +8,8 @@ var worker = "Henry";
 var day = "Monday";
 var minimumInventory = 2;
 var maximumInventory = 5;
+
+// Found a way to assign values in array
 var currentInventory = new Array();
 currentInventory["Jolly Ranchers"] = 2;
 currentInventory["Chewing Gum"] = 5;
