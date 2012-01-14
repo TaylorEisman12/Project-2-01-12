@@ -5,14 +5,9 @@
 alert("JavaScript works!");
 
 var worker = "Henry",
-    maxInventory = 60,
-    suckers = 15,
-    gum = 5,
-    gummyBears = 5
-    restock = true
-;
+    maxInventory = 60;
 
-var jollyRanchers = [ "Cherry", 5, "Grape", 2, "Apple", 8 ];
+var inventory = new Array("Jolly Ranchers", "Chewing Gum", "Suckers", "Gummy Bears");
 
 var outputJob = function () {
     console.log( worker + " you need to restock the candy." );
