@@ -7,7 +7,7 @@ alert("JavaScript works!");
 var worker = "Henry";
 var minimumInventory = 2;
 var maximumInventory = 5;
-var inventory = new Array("Jolly Ranchers", "Chewing Gum", "Suckers", "Gummy Bears");
+var currentInventory = new Array("Jolly Ranchers" => 2, "Chewing Gum" => 4, "Suckers" => 1, "Gummy Bears" => 2);
 
 function openStore(day){
 	if(day = "Monday"){
