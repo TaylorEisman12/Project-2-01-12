@@ -36,7 +36,7 @@ var needToRestock = function(currentInventory,minimumInventory){
 // Number Function
 var restockCandy = function (currtentInventory) {
 	inventoryRemaining = currentInventory.length;
-	while(inventoryRemaining > 0){
+	while(inventoryRemaining > 0){z
 		
 		console.log("We need each type of candy on the shelf.");
 		for (var inventoryItem = 0; inventoryItem < currentInventory.length; inventoryItem++){
@@ -53,10 +53,12 @@ var workStatus = function (manager,maximumInventory){
 };
 
 // Array Function
-var inventoryChart = function (candy,currrentInventory){
+var inventoryChart = function (currrentInventory){
 	console.log(currentInventory);
 };
 
 openStore(day);
 needToRestock(currentInventory,minimumInventory);
+inventoryChart(currentInventory);
 restockCandy(currentInventory);
+workStatus(manager,maximumInventory);
