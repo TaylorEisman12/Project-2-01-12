@@ -46,6 +46,6 @@ var restockCandy = function (inventory) {
 	}
 };
 
-var workStatus = function (){
-	console.log(manager + " will be very upset with " + worker + " if he does not get the inventory restocked.");	
+var workStatus = function (manager,maximumInventory){
+	console.log(manager + " will be very upset with " + worker + " if he stocks more than " + maximumInventory + " pieces of each candy.");	
 };
