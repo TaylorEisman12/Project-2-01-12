@@ -17,6 +17,7 @@ currentInventory["Chewing Gum"] = 5;
 currentInventory["Suckers"] = 3;
 currentInventory["Gummy Bears"] = 1;
 
+// Procedure
 var openStore = function(day){
 	if(day = "Monday"){
 		console.log( worker + " needs to check the candy stock." );
@@ -25,7 +26,7 @@ var openStore = function(day){
 	}
 };
 
-
+// Boolean Function
 var needToRestocked = function(currentInventory,minimumInventory){
 	while(currentInventory < minimumInventory){
 		console.log( worker + " needs to add more candy.");
@@ -33,6 +34,7 @@ var needToRestocked = function(currentInventory,minimumInventory){
 	}	
 };
 
+// Number Function
 var restockCandy = function (inventory) {
 	inventoryRemaining = inventory.length;
 	if(inventoryRemaining > 0){
@@ -46,6 +48,10 @@ var restockCandy = function (inventory) {
 	}
 };
 
+// String Function ???
 var workStatus = function (manager,maximumInventory){
 	console.log(manager + " will be very upset with " + worker + " if he stocks more than " + maximumInventory + " pieces of each candy.");	
 };
+
+// Array Function
+
