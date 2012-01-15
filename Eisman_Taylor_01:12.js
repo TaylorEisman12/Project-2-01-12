@@ -27,25 +27,24 @@ var openStore = function(day){
 };
 
 // Boolean Function
-var needToRestocked = function(currentInventory,minimumInventory){
-	while(currentInventory < minimumInventory){
+var needToRestock = function(currentInventory,minimumInventory){
+	if(currentInventory < minimumInventory){
 		console.log( worker + " needs to add more candy.");
-		currentInventory++;
 	}	
 };
 
 // Number Function
-var restockCandy = function (inventory) {
-	inventoryRemaining = inventory.length;
-	if(inventoryRemaining > 0){
+var restockCandy = function (currtentInventory) {
+	inventoryRemaining = currentInventory.length;
+	while(inventoryRemaining > 0){
 		
 		console.log("We need each type of candy on the shelf.");
-		for (var inventoryItem = 0; inventoryItem < inventory.length; inventoryItem++){
+		for (var inventoryItem = 0; inventoryItem < currentInventory.length; inventoryItem++){
 			console.log("Stocking " + inventory[inventoryItem]);
 		}
-	} else {
+	} 
 		console.log("The candy is fully stocked");
-	}
+	
 };
 
 // String Function ???
@@ -55,5 +54,9 @@ var workStatus = function (manager,maximumInventory){
 
 // Array Function
 var inventoryChart = function (candy,currrentInventory){
-	console.log(currentInventory + " .");
+	console.log(currentInventory);
 };
+
+openStore(day);
+needToRestock(currentInventory,minimumInventory);
+restockCandy(currentInventory);
