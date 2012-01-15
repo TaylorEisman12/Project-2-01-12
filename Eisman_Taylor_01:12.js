@@ -55,5 +55,5 @@ var workStatus = function (manager,maximumInventory){
 
 // Array Function
 var inventoryChart = function (candy,currrentInventory){
-	console.log(currentInventory[]" .");
+	console.log(currentInventory + " .");
 };
